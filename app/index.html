@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Cumpleaños de Luna</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+      <div id="luna-with-background"
+        data-500="top:0%;left:0%;"
+        data-750="top:-20%;left:30%;"
+        data-900="left:30%;"
+        data-1300="left:100%;">
+        <img src="/images/luna.jpg" id="luna"
+          data-0="opacity:1;"
+          data-500="opacity:0;">
+        <img src="/images/olaf.png" id="olaf"
+          data-500="bottom:135px;right:$rightpx;"
+          data-750="bottom:-135px;right:395px;"
+          data-900="right:395px;"
+          data-1300="bottom:-500px;right:1305px;">
+        <a href="#invite-form" data-menu-top="750"
+          data-0="display:block;"
+          data-100="display:none;"
+          class="glyphicon glyphicon-chevron-down"></a>
+      </div>
+
+      <div id="invite-form"
+        data-500="opacity:0;"
+        data-750="opacity:1;"
+        data-900="left:0%;"
+        data-1300="left:-100%;">
+        <h1>Feliz Cumpleaños</h1>
+        <h5>Feliz Cumpleaños</h5>
+
+        <div id="content">
+          <p>Queremos invitarte a formar parte de la celebración de un año mas de vida de nuestra princesa Luna.
+          <br>
+          Se va a celebrar el día Domingo 8 de Febrero a las 11:00am en casa.
+          <br>
+          Te agradecemos confirmes tu asistencia y de quienes te acompañen.
+          </p>
+
+          <form>
+            <div class="form-group">
+              <label for="name">Tu nombre:</label>
+              <input type="text" placeholder="nombre" id="name">
+            </div>
+
+            <div class="form-group">
+              <label for="plus-guests">Acompañantes:</label>
+              <input type="number" id="plus-guests" min="0" placeholder="acompañantes">
+            </div>
+
+            <div class="form-group">
+              <label></label>
+              <input type="submit" value="Confirmar">
+            </div>
+          </form>
+        </div>
+
+        <a href="#luna-with-background" data-menu-top="0"
+          data-600="display:none;"
+          data-700="display:block;"
+          data-800="display:block;"
+          data-900="display:none;"
+          class="glyphicon glyphicon-chevron-up"></a>
+        <a href="#address" data-menu-top="1500"
+          data-600="display:none;"
+          data-700="display:block;"
+          data-800="display:block;"
+          data-900="display:none;"
+          class="glyphicon glyphicon-chevron-down"></a>
+      </div>
+
+      <div id="address"
+        data-900="top:-100%;opacity:0;"
+        data-1300="top:5%;opacity:1;">
+        <iframe
+          class="non-clicked"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_OVg1sKdolqa8_mdaDHSSEf4ZvPB-0Ts&q=Calle+106B,+San+Jose,+Costa+Rica">
+        </iframe>
+        <img src="/images/elsa.png" id="elsa"
+          data-1300="left:-300px;"
+          data-1500="left:50px;">
+        <img src="/images/anna.png" id="anna"
+          data-1300="right:-300px;"
+          data-1500="right:20px;">
+
+        <a href="#invite-form" data-menu-top="750"
+          data-900="display:none;"
+          data-1300="display:block;"
+          class="glyphicon glyphicon-chevron-up"></a>
+      </div>
+    </main>
+
+    <script src="//da189i1jfloii.cloudfront.net/js/kinvey-html5-1.1.9.min.js"></script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/skrollr/src/skrollr.js"></script>
+    <script src="../bower_components/skrollr-menu/src/skrollr.menu.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
