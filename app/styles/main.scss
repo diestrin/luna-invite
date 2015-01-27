@@ -54,10 +54,18 @@ body {
 
 .glyphicon-chevron-down {
   left: 52%;
+
+  @media (max-width: 480px) {
+    left: 60%;
+  }
 }
 
 .glyphicon-chevron-up {
   left: 48%;
+
+  @media (max-width: 480px) {
+    left: 40%;
+  }
 }
 
 main {
